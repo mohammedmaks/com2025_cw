@@ -30,4 +30,5 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+    app_title: "Football League"
+    app_description: "This web app allows the user to record game results and various stats for the weekend league."
