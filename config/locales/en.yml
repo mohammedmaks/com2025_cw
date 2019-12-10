@@ -38,4 +38,6 @@ en:
         title: 'Football League Home'
         page_description: 'The idea of this page is to be the home page of the application.'
 
-        
+      contact:
+        title: 'Contact Us'
+        contact_us: 'Get in touch with us by completing the following form.'
