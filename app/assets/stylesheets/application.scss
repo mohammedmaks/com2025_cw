@@ -20,14 +20,29 @@ $font:'Times new Roman', 'Times', serif;
 $color: #FFFFFF;
 
 body{
+
   font-family: $font;
   background-color: $color;
-  margin: 10px;
-  padding: 10px;
-  background-color: lightblue;
-  
+  //margin: 10px;
+  //padding: 10px;
+  background-color: #003E7E;
+
 }
 
 h1{
   text-transform: uppercase;
+}
+
+header{
+  background-color: #004682;
+  h1{
+    text-align: center;
+  }
+}
+
+  footer{
+    background-color: grey;
+    p{
+      text-align: center;
+    }
 }
