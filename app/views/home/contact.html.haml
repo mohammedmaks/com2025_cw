@@ -16,32 +16,3 @@
   =text_field_tag :message, '', title: t('.enter_message '), size: 100
 
   =submit_tag t('.submit')
-
-
-  .container
-    %form{:action => "/action_page.php"}
-      .row
-        .col-25
-          %label{:for => "fname"} First Name
-        .col-75
-          %input#fname{:name => "firstname", :placeholder => "Your name..", :type => "text"}/
-      .row
-        .col-25
-          %label{:for => "lname"} Last Name
-        .col-75
-          %input#lname{:name => "lastname", :placeholder => "Your last name..", :type => "text"}/
-      .row
-        .col-25
-          %label{:for => "country"} Country
-        .col-75
-          %select#country{:name => "country"}
-            %option{:value => "australia"} Australia
-            %option{:value => "canada"} Canada
-            %option{:value => "usa"} USA
-      .row
-        .col-25
-          %label{:for => "subject"} Subject
-        .col-75
-          %textarea#subject{:name => "subject", :placeholder => "Write something..", :style => "height:200px"}
-      .row
-        %input{:type => "submit", :value => "Submit"}/
