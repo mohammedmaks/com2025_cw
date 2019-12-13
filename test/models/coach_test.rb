@@ -7,7 +7,7 @@ class CoachTest < ActiveSupport::TestCase
     coach.save
     refute coach.valid?
   end
-#a test to check whether the mens team details have been inputted correctly
+#a test to check whether the coach details have been inputted correctly
 #passes if they have
   test 'should save valid name' do
     coach=Coach.new
