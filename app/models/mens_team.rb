@@ -1,0 +1,2 @@
+class MensTeam < ApplicationRecord
+end

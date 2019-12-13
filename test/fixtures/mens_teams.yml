@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: MyString
+  no_of_players: 1
+  division: MyString
+
+two:
+  level: MyString
+  no_of_players: 1
+  division: MyString
