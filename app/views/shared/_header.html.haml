@@ -2,7 +2,7 @@
   %nav.navbar.navbar-inverse.navbar-static-top
     .container-fluid
       .navbar-header
-        %a.navbar-brand UOSSurreyFootball
+        %a.navbar-brand{:href => "/" } UOSSurreyFootball
       %ul.nav.navbar-nav
         %li
           = link_to t('Home'), root_path
@@ -12,6 +12,4 @@
           %a{:href => "#"} Page 2
         %li
           = link_to t('contact'), contact_path
-
-
   %h4= t('.welcome')
