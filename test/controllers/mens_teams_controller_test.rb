@@ -17,7 +17,7 @@ class MensTeamsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create mens_team" do
     assert_difference('MensTeam.count') do
-      post mens_teams_url, params: { mens_team: { division: @mens_team.division, level: @mens_team.level, no_of_players: @mens_team.no_of_players } }
+      post mens_teams_url, params: { mens_team: { division: @mens_team.division, level: @mens_team.level + " create", no_of_players: @mens_team.no_of_players } }
     end
 
     assert_redirected_to mens_team_url(MensTeam.last)

@@ -1,11 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  level: MyString
-  no_of_players: 1
-  division: MyString
+  level: first team
+  no_of_players: 5
+  division: premier
 
 two:
-  level: MyString
-  no_of_players: 1
-  division: MyString
+  #level string has to be unique due to validations made
+  level: second team
+  no_of_players: 5
+  division: championship

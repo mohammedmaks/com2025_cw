@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :coaches
   resources :mens_teams
   #resources: articles
   get 'contact', to: 'home#contact'
