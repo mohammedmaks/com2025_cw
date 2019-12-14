@@ -10,6 +10,10 @@
   %b Division:
   = @mens_team.division
 
+%p=link_to 'Add Player', new_player_path( mens_team_id: @mens_team)
+%p=link_to 'Add Coach', new_coach_path( coach_id: @coach)
+
+
 = link_to 'Edit', edit_mens_team_path(@mens_team)
 \|
 = link_to 'Back', mens_teams_path

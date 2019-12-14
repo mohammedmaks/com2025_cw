@@ -5,7 +5,7 @@
     %tr
       %th Name
       %th Age
-      %th Means team
+      %th Mens team
       %th Coach
       %th
       %th
@@ -16,12 +16,10 @@
       %tr
         %td= player.name
         %td= player.age
-        %td= player.means_team
+        %td= player.mens_team.level
         %td= player.coach
         %td= link_to 'Show', player
         %td= link_to 'Edit', edit_player_path(player)
         %td= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
-
-= link_to 'New Player', new_player_path

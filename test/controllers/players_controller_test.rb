@@ -3,6 +3,8 @@ require 'test_helper'
 class PlayersControllerTest < ActionDispatch::IntegrationTest
   setup do
     @player = players(:one)
+    @mens_team = mens_teams(:one)
+    @coach = coaches(:one)
   end
 
   test "should get index" do
@@ -11,13 +13,13 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get new" do
-    get new_player_url
+    get new_player_url(mens_team_id: @mens_team)
     assert_response :success
   end
 
   test "should create player" do
     assert_difference('Player.count') do
-      post players_url, params: { player: { age: @player.age, coach_id: @player.coach_id, means_team_id: @player.means_team_id, name: @player.name } }
+      post players_url, params: { player: { age: @player.age, coach_id: @player.coach.id, mens_team_id: @player.mens_team.id, name: @player.name } }
     end
 
     assert_redirected_to player_url(Player.last)
@@ -34,7 +36,7 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update player" do
-    patch player_url(@player), params: { player: { age: @player.age, coach_id: @player.coach_id, means_team_id: @player.means_team_id, name: @player.name } }
+    patch player_url(@player), params: { player: { age: @player.age, coach_id: @player.coach.id, mens_team_id: @player.mens_team.id, name: @player.name } }
     assert_redirected_to player_url(@player)
   end
 

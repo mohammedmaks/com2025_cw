@@ -3,8 +3,8 @@ class CreatePlayers < ActiveRecord::Migration[5.2]
     create_table :players do |t|
       t.string :name, null: false
       t.integer :age
-      t.belongs_to :means_team, foreign_key: true
-      t.belongs_to :coach, foreign_key: true
+      t.belongs_to :mens_team, index: true, foreign_key: true
+      t.belongs_to :coach, index: true, foreign_key: true
 
       t.timestamps
     end

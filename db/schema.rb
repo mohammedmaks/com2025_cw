@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_13_204707) do
+ActiveRecord::Schema.define(version: 2019_12_13_221821) do
 
   create_table "coaches", force: :cascade do |t|
     t.string "coach_name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["coach_name"], name: "index_coaches_on_coach_name"
   end
 
   create_table "mens_teams", force: :cascade do |t|
@@ -30,12 +31,12 @@ ActiveRecord::Schema.define(version: 2019_12_13_204707) do
   create_table "players", force: :cascade do |t|
     t.string "name", null: false
     t.integer "age"
-    t.integer "means_team_id"
+    t.integer "mens_team_id"
     t.integer "coach_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["coach_id"], name: "index_players_on_coach_id"
-    t.index ["means_team_id"], name: "index_players_on_means_team_id"
+    t.index ["mens_team_id"], name: "index_players_on_mens_team_id"
   end
 
 end

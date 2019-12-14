@@ -3,6 +3,8 @@ require 'test_helper'
 class MensTeamsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @mens_team = mens_teams(:one)
+    @player = players(:one)
+    @coach = coaches(:one)
   end
 
   test "should get index" do

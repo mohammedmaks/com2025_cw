@@ -16,7 +16,7 @@ class PlayersTest < ApplicationSystemTestCase
 
     fill_in "Age", with: @player.age
     fill_in "Coach", with: @player.coach_id
-    fill_in "Means team", with: @player.means_team_id
+    fill_in "Mens team", with: @player.mens_team_id
     fill_in "Name", with: @player.name
     click_on "Create Player"
 
@@ -30,7 +30,7 @@ class PlayersTest < ApplicationSystemTestCase
 
     fill_in "Age", with: @player.age
     fill_in "Coach", with: @player.coach_id
-    fill_in "Means team", with: @player.means_team_id
+    fill_in "Mens team", with: @player.mens_team_id
     fill_in "Name", with: @player.name
     click_on "Update Player"
 
